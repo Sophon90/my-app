@@ -1,0 +1,126 @@
+.banner {
+  display: flex;
+  justify-content: space-between; /* Align text to the left and image to the right */
+  align-items: center;
+  background-color: #ffc107; /* Bright yellow background */
+  padding: 2rem;
+  height: 50vh; /* Compact banner height */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.banner-text {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+}
+
+h1 {
+  font-size: 4.5rem; /* ขยายขนาดตัวอักษร */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff; /* เปลี่ยนสีเป็นสีขาว */
+}
+
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align form elements to the left */
+  gap: 1rem;
+  background: #fff; /* White background for the form */
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.delivery-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start; /* Align buttons to the left */
+  width: 100%;
+}
+
+.option {
+  flex: 1;
+  background: #f9f9f9;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-weight: bold;
+}
+
+.option.active {
+  background: #ffe5c5; /* Highlighted button */
+  color: #ff6c3f; /* Orange text */
+  border: 1px solid #ffc89b;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.address-input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #f9f9f9;
+}
+
+.address-input::placeholder {
+  color: #999;
+}
+
+.find-food-button {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(to right, #ff6a3f, #ff915e); /* Gradient button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.find-food-button:hover {
+  background: linear-gradient(to right, #ff5e2f, #ff7b4b);
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* Optional: adds rounded corners to the image */
+}
